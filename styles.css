@@ -9,7 +9,6 @@
 
     /* Fonts */
     --font-serif: 'Cormorant Garamond', serif;
-    --font-sans: 'Montserrat', sans-serif;
 }
 
 body.light-mode {
@@ -79,9 +78,9 @@ body.light-mode {
     align-items: center;
     gap: 8px;
     transition: all 0.3s ease;
-    font-family: var(--font-sans);
-    font-size: 0.85rem;
-    font-weight: 500;
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    font-weight: 600;
     letter-spacing: 0.5px;
 }
 
@@ -147,7 +146,7 @@ body.lang-sq button[data-lang="sq"] {
 }
 
 body {
-    font-family: var(--font-sans);
+    font-family: var(--font-serif);
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
@@ -347,7 +346,7 @@ body.light-mode .signature-dark-mode {
     max-width: 700px;
     margin: 0 auto;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.35rem;
 }
 
 .bio-content p {
@@ -478,7 +477,7 @@ body.light-mode .signature-dark-mode {
 .footer {
     padding: 40px 0;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: var(--accent-color);
     border-top: 1px solid var(--border-color);
 }
@@ -610,7 +609,7 @@ body.light-mode .signature-dark-mode {
 }
 
 .publication-description {
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     color: var(--text-color);
     opacity: 0.8;
