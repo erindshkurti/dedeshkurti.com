@@ -421,6 +421,12 @@ body.light-mode .signature-dark-mode {
     .publications-grid {
         grid-template-columns: 1fr;
     }
+
+    .signature {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
 }
 
 /* Publications Section */
