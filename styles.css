@@ -177,7 +177,38 @@ h4 {
     font-style: italic;
     font-size: 1.5rem;
     max-width: 600px;
+    margin: 0 0 0.5rem 0;
+    color: var(--text-color);
+}
+
+.signature {
+    max-width: 250px;
+    height: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
     margin: 0;
+}
+
+.signature:hover {
+    opacity: 1;
+}
+
+/* Default (Dark Mode): Show light signature */
+.signature-light-mode {
+    display: block;
+}
+
+.signature-dark-mode {
+    display: none;
+}
+
+/* Light Mode: Show dark signature */
+body.light-mode .signature-light-mode {
+    display: none;
+}
+
+body.light-mode .signature-dark-mode {
+    display: block;
 }
 
 .scroll-indicator {
