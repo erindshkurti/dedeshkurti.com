@@ -1,14 +1,65 @@
 :root {
-    /* Colors - Minimal & Elegant */
+    /* Colors - Dark Mode (Default) */
+    --bg-color: #252525;
+    --text-color: #e0e0e0;
+    --accent-color: #b0b0b0;
+    --secondary-bg: #333333;
+    --border-color: #444444;
+    --shadow-color: rgba(0, 0, 0, 0.4);
+
+    /* Fonts */
+    --font-serif: 'Cormorant Garamond', serif;
+    --font-sans: 'Montserrat', sans-serif;
+}
+
+body.light-mode {
+    /* Colors - Light Mode */
     --bg-color: #f9f9f9;
     --text-color: #333333;
     --accent-color: #7a7a7a;
     --secondary-bg: #ffffff;
     --border-color: #e0e0e0;
+    --shadow-color: rgba(0, 0, 0, 0.05);
+}
 
-    /* Fonts */
-    --font-serif: 'Cormorant Garamond', serif;
-    --font-sans: 'Montserrat', sans-serif;
+/* Theme Toggle Button */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    padding: 10px;
+}
+
+.theme-toggle svg {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: transform 0.5s ease;
+}
+
+.theme-toggle:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+.theme-toggle:hover svg {
+    transform: rotate(15deg);
 }
 
 * {
@@ -71,7 +122,7 @@ h4 {
     border-radius: 4px;
     /* Slight rounded corners instead of circle */
     margin-bottom: 2rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px var(--shadow-color);
     overflow: hidden;
     border: 5px solid #fff;
     flex-shrink: 0;
@@ -109,7 +160,7 @@ h4 {
     margin-bottom: 1rem;
     line-height: 1.1;
     font-weight: 400;
-    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    text-shadow: 0 10px 30px var(--shadow-color);
     /* Subtle shadow for depth */
 }
 
@@ -203,24 +254,36 @@ h4 {
 
 .gallery-item {
     aspect-ratio: 1;
-    background-color: #f0f0f0;
+    background-color: var(--secondary-bg);
+    /* Use variable for dark mode support */
     border-radius: 4px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
     position: relative;
+    /* Hardware acceleration fix */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
 }
 
 .gallery-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, filter 0.5s ease;
     filter: grayscale(100%);
+    /* Hardware acceleration fix */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    will-change: transform, filter;
 }
 
 .gallery-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px var(--shadow-color);
+    z-index: 1;
+    /* Ensure it stays on top during transform */
 }
 
 .gallery-item:hover img {
