@@ -85,6 +85,12 @@ body.light-mode {
     letter-spacing: 0.5px;
 }
 
+/* Hide toggles on scroll down */
+.theme-toggle.hide,
+.lang-toggle.hide {
+    transform: translateY(-100px);
+}
+
 .lang-toggle:hover {
     background-color: var(--text-color);
     color: var(--bg-color);

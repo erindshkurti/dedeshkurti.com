@@ -95,4 +95,22 @@ document.addEventListener('DOMContentLoaded', () => {
         // Save preference
         localStorage.setItem('language', newLang);
     });
+
+    // Smart Scroll for Toggles
+    let lastScrollTop = 0;
+    const toggles = [themeToggle, langToggle];
+
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop && scrollTop > 100) {
+            // Scrolling down & past 100px - Hide toggles
+            toggles.forEach(toggle => toggle.classList.add('hide'));
+        } else {
+            // Scrolling up - Show toggles
+            toggles.forEach(toggle => toggle.classList.remove('hide'));
+        }
+
+        lastScrollTop = scrollTop;
+    });
 });
