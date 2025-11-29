@@ -62,6 +62,78 @@ body.light-mode {
     transform: rotate(15deg);
 }
 
+/* Language Toggle Button */
+.lang-toggle {
+    position: fixed;
+    top: 20px;
+    right: 75px;
+    background: transparent;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    height: 44px;
+    padding: 0 15px;
+    border-radius: 22px;
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.lang-toggle:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+.lang-option {
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.lang-option.active {
+    opacity: 1;
+    font-weight: 600;
+}
+
+.lang-separator {
+    opacity: 0.3;
+}
+
+/* Language Toggle - Hide all by default */
+[data-lang] {
+    display: none !important;
+}
+
+/* English (Default) - Show EN content */
+[data-lang="en"] {
+    display: block !important;
+}
+
+a[data-lang="en"],
+button[data-lang="en"] {
+    display: inline-block !important;
+}
+
+/* Albanian Mode - Hide EN, Show SQ */
+body.lang-sq [data-lang="en"] {
+    display: none !important;
+}
+
+body.lang-sq [data-lang="sq"] {
+    display: block !important;
+}
+
+body.lang-sq a[data-lang="sq"],
+body.lang-sq button[data-lang="sq"] {
+    display: inline-block !important;
+}
+
 * {
     margin: 0;
     padding: 0;

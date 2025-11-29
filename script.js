@@ -62,4 +62,37 @@ document.addEventListener('DOMContentLoaded', () => {
         // Save preference
         localStorage.setItem('theme', isLight ? 'light' : 'dark');
     });
+
+    // Language Toggle
+    const langToggle = document.getElementById('lang-toggle');
+    const langOptions = langToggle.querySelectorAll('.lang-option');
+
+    // Check for saved language preference (Default is now English/EN)
+    const savedLang = localStorage.getItem('language') || 'en';
+    if (savedLang === 'sq') {
+        body.classList.add('lang-sq');
+        langOptions.forEach(opt => {
+            opt.classList.toggle('active', opt.dataset.lang === 'sq');
+        });
+    } else {
+        // Default is English
+        langOptions.forEach(opt => {
+            opt.classList.toggle('active', opt.dataset.lang === 'en');
+        });
+    }
+
+    langToggle.addEventListener('click', () => {
+        const isAlbanian = body.classList.contains('lang-sq');
+        body.classList.toggle('lang-sq');
+
+        const newLang = isAlbanian ? 'en' : 'sq';
+
+        // Update active state
+        langOptions.forEach(opt => {
+            opt.classList.toggle('active', opt.dataset.lang === newLang);
+        });
+
+        // Save preference
+        localStorage.setItem('language', newLang);
+    });
 });

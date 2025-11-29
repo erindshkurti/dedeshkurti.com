@@ -30,16 +30,29 @@
         </svg>
     </button>
 
+    <button id="lang-toggle" class="lang-toggle" aria-label="Switch Language">
+        <span class="lang-option active" data-lang="en">EN</span>
+        <span class="lang-separator">|</span>
+        <span class="lang-option" data-lang="sq">SQ</span>
+    </button>
+
     <header class="hero">
         <div class="hero-content fade-in">
             <div class="portrait-container">
                 <img src="assets/portrait.jpg" alt="Dede Shkurti" class="portrait-img">
             </div>
             <div class="hero-text">
-                <h1 class="title">In Loving Memory</h1>
+                <h1 class="title" data-lang="sq">Në Kujtim të Përjetshëm</h1>
+                <h1 class="title" data-lang="en">In Loving Memory</h1>
+
                 <h2 class="name">Dede Shkurti</h2>
                 <p class="dates">1953 - 2018</p>
-                <p class="quote">"Dëshiroj të mbetem shpinëkthyer ndaj çdo dyfytyrësie të botës. - D.SH."</p>
+
+                <p class="quote" data-lang="sq">"Dëshiroj të mbetem shpinëkthyer ndaj çdo dyfytyrësie të botës. - D.SH."
+                </p>
+                <p class="quote" data-lang="en">"I wish to remain steadfast against all hypocrisy in the world. - D.SH."
+                </p>
+
                 <img src="assets/signature-light.png" alt="Signature" class="signature signature-light-mode">
                 <img src="assets/signature-dark.png" alt="Signature" class="signature signature-dark-mode">
             </div>
@@ -52,8 +65,10 @@
     <main>
         <section id="biography" class="section">
             <div class="container fade-in-scroll">
-                <h3 class="section-title">His Life</h3>
-                <div class="bio-content">
+                <h3 class="section-title" data-lang="sq">Jeta e Tij</h3>
+                <h3 class="section-title" data-lang="en">His Life</h3>
+
+                <div class="bio-content" data-lang="sq">
                     <p>
                         Dedë Shkurti (2 Mars 1953 – 21 Shkurt 2018) ishte një poet, shkrimtar, publiçist, e inxhinier
                         mekanik.
@@ -62,8 +77,8 @@
                         Lindi në fshatin Shpërdhazë të Oroshit të Poshtëm me 2 Mars 1953, ku kaloi edhe fëmijërinë e tij
                         deri në përfundim të shkollës tetëvjeçare. Studimet e shkollës së mesme i kreu në Gjimnazin e
                         Përgjithshëm në Rrëshen (Shkolla Bardhok Biba). Në shkollë të mesme tregoi prirje të larta për
-                        letërsi dhe vizatim teknik. U diplomua në vitin 1972. Për arritjet më të larta akademike, i’u
-                        akordua çmimi “Medalje e Artë”. Fitoi të drejtën e studimeve të larta për inxhinieri mekanike në
+                        letërsi dhe vizatim teknik. U diplomua në vitin 1972. Për arritjet më të larta akademike, i'u
+                        akordua çmimi "Medalje e Artë". Fitoi të drejtën e studimeve të larta për inxhinieri mekanike në
                         Universitetin e Tiranës, ku përfundoi fakultetin për inxhinieri mekanike.
                     </p>
                     <p>
@@ -75,16 +90,16 @@
                         në Tiranë, Laç e Mirditë, dhe furnizonte të gjithë Shqipërinë me goma dhe pjesë këmbimi të
                         automjeteve të rënda e të lehta. Deda e drejtoi firmën deri në vitin 2003, kur emigroi për në
                         Shtetet e Bashkuara të Amerikës. Në ShBA, vazhdon krijimtarinë letrare, dhe i rikthehet
-                        shkollës, duke studiuar “online” drejt unifikimit të diplomës së tij për inxhinieri mekanike në
+                        shkollës, duke studiuar "online" drejt unifikimit të diplomës së tij për inxhinieri mekanike në
                         sistemin amerikan. Pas kthimit nga Amerika punon si drejtor teknik për kompaninë private ČEZ dhe
                         Bashkinë e Tiranës deri në fund të jetës.
                     </p>
                     <p>
                         Deda filloi të shkruante që në universitet, por zyrtarisht u botua për herë të parë në vitin
-                        2002, me vëllimin “Me zemrën u zura keq”. Krijimtaria e tij letrare vijoi pa ndërprerje, dhe u
+                        2002, me vëllimin "Me zemrën u zura keq". Krijimtaria e tij letrare vijoi pa ndërprerje, dhe u
                         zgjerua gjatë periudhës së tij në Amerikë. Libri i tij i dytë doli në shtyp në vitin 2014.
-                        Vëllimi i tij i tretë, ‘A thua, vegim?!” u botua në Janar të vitit 2018, ndërsa libri me tregime
-                        “Burri pa këmishë” u botua pas vdekjes, në vitin 2019. Të dy vëllimet e fundit i shkroi gjatë
+                        Vëllimi i tij i tretë, "A thua, vegim?!" u botua në Janar të vitit 2018, ndërsa libri me tregime
+                        "Burri pa këmishë" u botua pas vdekjes, në vitin 2019. Të dy vëllimet e fundit i shkroi gjatë
                         periudhës 2017-2018.
                     </p>
                     <p>
@@ -93,14 +108,71 @@
                         sistemit automobilistik, historisë së Mirditës, si dhe politikës dhe ekonomisë.
                     </p>
                     <p>
-                        Në vitin 2014, Dedë Shkurti u nderua me çmimin “Mirënjohje” nga Ministria e Diasporës së
-                        Republikës së Kosovës për poezinë “Vunoi dhe Himara” nga vëllimi poetik “Me Zemrën U Zura Keq”.
+                        Në vitin 2014, Dedë Shkurti u nderua me çmimin "Mirënjohje" nga Ministria e Diasporës së
+                        Republikës së Kosovës për poezinë "Vunoi dhe Himara" nga vëllimi poetik "Me Zemrën U Zura Keq".
                     </p>
                     <p>
                         Në 22 Shkurt, 2019, me rastin e një-vjetorit të ndarjes nga jeta, Deda u nderua nga Bashkia
-                        Rrëshen me çmimin “Mirënjohje”, për kontribute të shquara në edukim, profesion, letërsi, dhe
+                        Rrëshen me çmimin "Mirënjohje", për kontribute të shquara në edukim, profesion, letërsi, dhe
                         shoqëri. Çmimi u prezantua gjatë një ceremonie përkujtimore në nder të tij në qytetin e
                         Rrëshenit.
+                    </p>
+                </div>
+
+                <div class="bio-content" data-lang="en">
+                    <p>
+                        Dedë Shkurti (March 2, 1953 – February 21, 2018) was a poet, writer, publicist, and mechanical
+                        engineer.
+                    </p>
+                    <p>
+                        He was born on March 2, 1953, in the village of Shpërdhazë in Lower Orosh, where he spent his
+                        childhood and completed his elementary education. He pursued his secondary studies at the
+                        General Gymnasium in Rrëshen (Bardhok Biba School). During high school he demonstrated strong
+                        aptitude for literature and technical drawing. He graduated in 1972 and, for his outstanding
+                        academic achievements, was awarded the “Gold Medal”. He earned the right to continue higher
+                        studies in mechanical engineering at the University of Tirana, where he completed the Faculty of
+                        Mechanical Engineering.
+                    </p>
+                    <p>
+                        In 1977, Deda was appointed as an engineer at the Goods Transport Park in Kukës. In 1981, he was
+                        named Chief Engineer of the Goods Transport Park for the entire Mirdita region, based in
+                        Rrëshen, where he lived and raised his family with his wife, Gjela Shkurti. In 1996, Deda left
+                        his post as Chief Engineer and co-founded the private company I-AS Shpk with his brother, Ndue
+                        Shkurti. Initially opened as a tire service for heavy transport near the Fan Bridge, the company
+                        expanded to four branches in Tirana, Laç, and Mirdita, supplying all of Albania with tires and
+                        spare parts for both heavy and light vehicles. Deda directed the company until 2003, when he
+                        emigrated to the United States of America. In the U.S., he continued his literary work and
+                        returned to academic study, pursuing online coursework toward the recognition of his mechanical
+                        engineering degree within the American system. Upon returning from the U.S., he served as
+                        Technical Director for the private company ČEZ and for the Municipality of Tirana, positions he
+                        held until the end of his life.
+                    </p>
+                    <p>
+                        Deda began writing during his university years, but he was officially published for the first
+                        time in 2002 with the poetry volume “At Odds With My Heart”. His literary work continued
+                        uninterrupted and expanded significantly during his time in America. His second book, "The Light
+                        and the Shadows"was
+                        published in 2014. His third volume, “A Glimmer, Perhaps?!”, appeared in print in January 2018,
+                        while
+                        his collection of short stories, “The Uncovered Man”, was published posthumously in 2019. Both
+                        of
+                        his final volumes were written during the period 2017–2018.
+                    </p>
+                    <p>
+                        Alongside literature, Deda contributed extensively to publicistic writing, publishing in print
+                        and online media, and appearing as a guest on national and regional television programs to speak
+                        on topics related to the automotive system, the history of Mirdita, as well as politics and
+                        economics.
+                    </p>
+                    <p>
+                        In 2014, Dedë Shkurti was honored with the “Gratitude” award by the Ministry of Diaspora of the
+                        Republic of Kosovo for the poem “Vunoi dhe Himara” from his poetry volume Me zemrën u zura keq.
+                    </p>
+                    <p>
+                        On February 22, 2019, on the first anniversary of his passing, Deda was honored by the
+                        Municipality of Rrëshen with the “Gratitude” award for his distinguished contributions to
+                        education, his profession, literature, and society. The award was presented during a
+                        commemorative ceremony held in his honor in the city of Rrëshen.
                     </p>
                 </div>
             </div>
@@ -108,35 +180,52 @@
 
         <section id="publications" class="section alt-bg">
             <div class="container fade-in-scroll">
-                <h3 class="section-title">Publications</h3>
+                <h3 class="section-title" data-lang="sq">Botime</h3>
+                <h3 class="section-title" data-lang="en">Publications</h3>
                 <div class="publications-grid">
                     <div class="publication-item">
                         <div class="publication-year">2002</div>
-                        <h4 class="publication-title">Me zemrën u zura keq</h4>
-                        <p class="publication-type">Poezi</p>
-                        <p class="publication-description">Vëllimi i parë poetik, i cili shënoi fillimin e karrierës së
-                            tij letrare.</p>
+                        <h4 class="publication-title" data-lang="sq">Me zemrën u zura keq</h4>
+                        <h4 class="publication-title" data-lang="en">At Odds With My Heart</h4>
+                        <p class="publication-type" data-lang="sq">Poezi</p>
+                        <p class="publication-type" data-lang="en">Poetry</p>
+                        <p class="publication-description" data-lang="sq">Vëllimi i parë poetik, i cili shënoi fillimin
+                            e karrierës së tij letrare.</p>
+                        <p class="publication-description" data-lang="en">First poetry collection, marking the beginning
+                            of his literary career.</p>
                     </div>
                     <div class="publication-item">
                         <div class="publication-year">2014</div>
-                        <h4 class="publication-title">E bardha dhe të zezat</h4>
-                        <p class="publication-type">Poezi</p>
-                        <p class="publication-description">Vazhdim i krijimtarisë letrare të zhvilluar gjatë periudhës
-                            në Amerikë.</p>
+                        <h4 class="publication-title" data-lang="sq">E bardha dhe të zezat</h4>
+                        <h4 class="publication-title" data-lang="en">The Light and the Shadows</h4>
+                        <p class="publication-type" data-lang="sq">Poezi</p>
+                        <p class="publication-type" data-lang="en">Poetry</p>
+                        <p class="publication-description" data-lang="sq">Vazhdim i krijimtarisë letrare të zhvilluar
+                            gjatë periudhës në Amerikë.</p>
+                        <p class="publication-description" data-lang="en">Continuation of his literary work developed
+                            during his time in America.</p>
                     </div>
                     <div class="publication-item">
                         <div class="publication-year">2018</div>
-                        <h4 class="publication-title">A thua, vegim?!</h4>
-                        <p class="publication-type">Poezi</p>
-                        <p class="publication-description">Botuar në Janar 2018, një nga veprat e fundit të shkruara
-                            gjatë viteve 2017-2018.</p>
+                        <h4 class="publication-title" data-lang="sq">A thua, vegim?!</h4>
+                        <h4 class="publication-title" data-lang="en">A Glimmer, Perhaps?!</h4>
+                        <p class="publication-type" data-lang="sq">Poezi</p>
+                        <p class="publication-type" data-lang="en">Poetry</p>
+                        <p class="publication-description" data-lang="sq">Botuar në Janar 2018, një nga veprat e fundit
+                            të shkruara gjatë viteve 2017-2018.</p>
+                        <p class="publication-description" data-lang="en">Published in January 2018, one of his final
+                            works written during 2017-2018.</p>
                     </div>
                     <div class="publication-item">
                         <div class="publication-year">2019</div>
-                        <h4 class="publication-title">Burri pa këmishë</h4>
-                        <p class="publication-type">Tregime</p>
-                        <p class="publication-description">Botuar pas vdekjes, një koleksion tregimesh të shkruara në
-                            periudhën 2017-2018.</p>
+                        <h4 class="publication-title" data-lang="sq">Burri pa këmishë</h4>
+                        <h4 class="publication-title" data-lang="en">The Uncovered Man</h4>
+                        <p class="publication-type" data-lang="sq">Tregime</p>
+                        <p class="publication-type" data-lang="en">Short Stories</p>
+                        <p class="publication-description" data-lang="sq">Botuar pas vdekjes, një koleksion tregimesh të
+                            shkruara në periudhën 2017-2018.</p>
+                        <p class="publication-description" data-lang="en">Published posthumously, a collection of short
+                            stories written during 2017-2018.</p>
                     </div>
                 </div>
             </div>
@@ -144,7 +233,8 @@
 
         <section id="gallery" class="section">
             <div class="container fade-in-scroll">
-                <h3 class="section-title">Cherished Moments</h3>
+                <h3 class="section-title" data-lang="sq">Momente të Çmuara</h3>
+                <h3 class="section-title" data-lang="en">Cherished Moments</h3>
                 <div class="gallery-grid">
                     <div class="gallery-item"><img src="assets/gallery-1.jpg" alt="Cherished Moment 1"></div>
                     <div class="gallery-item"><img src="assets/gallery-2.jpg" alt="Cherished Moment 2"></div>
@@ -158,18 +248,26 @@
 
         <section id="tribute" class="section">
             <div class="container fade-in-scroll">
-                <h3 class="section-title">Tributes</h3>
-                <p class="tribute-intro">Remembering the joy he brought to our lives.</p>
+                <h3 class="section-title" data-lang="sq">Nderime</h3>
+                <h3 class="section-title" data-lang="en">Tributes</h3>
+
+                <p class="tribute-intro" data-lang="sq">Duke kujtuar gëzimin që solli në jetën tonë.</p>
+                <p class="tribute-intro" data-lang="en">Remembering the joy he brought to our lives.</p>
+
                 <!-- Static list for now, or mailto link -->
                 <div class="tribute-actions">
-                    <a href="mailto:your-email@example.com?subject=Tribute%20Message" class="btn">Share a Memory</a>
+                    <a href="mailto:your-email@example.com?subject=Tribute%20Message" class="btn" data-lang="sq">Ndani
+                        një Kujtim</a>
+                    <a href="mailto:your-email@example.com?subject=Tribute%20Message" class="btn" data-lang="en">Share a
+                        Memory</a>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <p>&copy; 2025 In Loving Memory. Forever in our hearts.</p>
+        <p data-lang="sq">&copy; 2025 Në Kujtim të Përjetshëm. Përgjithmonë në zemrat tona.</p>
+        <p data-lang="en">&copy; 2025 In Loving Memory. Forever in our hearts.</p>
     </footer>
 
     <script src="script.js"></script>
