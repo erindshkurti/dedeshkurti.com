@@ -384,6 +384,13 @@ body.light-mode .signature-dark-mode {
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
+    .hero {
+        min-height: 100vh;
+        height: auto;
+        justify-content: flex-start;
+        padding-top: 80px;
+    }
+
     .hero-content {
         flex-direction: column;
         gap: 2rem;
