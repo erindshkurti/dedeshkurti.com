@@ -422,10 +422,10 @@ body.light-mode .signature-dark-mode {
         grid-template-columns: 1fr;
     }
 
-    .signature {
+    .signature-light-mode,
+    .signature-dark-mode {
         margin-left: auto;
         margin-right: auto;
-        display: block;
     }
 }
 
