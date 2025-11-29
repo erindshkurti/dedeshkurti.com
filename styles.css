@@ -427,6 +427,10 @@ body.light-mode .signature-dark-mode {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .scroll-indicator {
+        display: none;
+    }
 }
 
 /* Publications Section */
