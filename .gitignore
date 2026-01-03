@@ -1,0 +1,29 @@
+# Environment variables (contains sensitive AWS info)
+.env
+
+# Documentation folder (private)
+docs/
+
+# macOS
+.DS_Store
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+.cache/
+
+# Node modules (if you ever add npm packages)
+node_modules/
+
+# Build outputs (if you ever add a build process)
+dist/
+build/

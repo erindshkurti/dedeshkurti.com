@@ -1,58 +1,79 @@
-# Dede Shkurti Tribute Website
+# Dedë Shkurti - Tribute Website
 
-A minimal and elegant tribute website dedicated to the memory of Dede Shkurti (1953 - 2018).
-
-## Overview
-
-This project is a static web application designed with a focus on simplicity, typography, and respectful aesthetics. It serves as a digital memorial to share his life story, photos, and memories.
+A minimal, elegant tribute website honoring the life and work of Dedë Shkurti (1953-2018), poet, writer, publicist, and mechanical engineer.
 
 ## Features
 
--   **Elegant Hero Section**: Full-screen introduction with a side-by-side layout featuring a portrait and dedication text.
--   **Biography**: A dedicated section for sharing his life story.
--   **Gallery**: A responsive grid layout for displaying cherished moments.
--   **Tributes**: A section for visitors to pay their respects.
--   **Responsive Design**: Fully responsive layout that adapts gracefully to mobile, tablet, and desktop screens.
--   **Smooth Animations**: Subtle scroll-triggered fade-in animations for a polished experience.
+- **Bilingual Support**: Full English and Albanian language toggle
+- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
+- **Dark/Light Mode**: Theme toggle for user preference
+- **Elegant Typography**: Cormorant Garamond font for a classic, respectful aesthetic
+- **Interactive Elements**: Smooth animations and hover effects
+- **Media Gallery**: Photo gallery and embedded TV appearances
+
+## Sections
+
+- **Biography**: Comprehensive life story and achievements
+- **Publications**: Four published works (2002-2019)
+- **TV Appearances**: Featured media interviews
+- **Gallery**: Cherished moments and memories
+- **Tributes**: Space for sharing memories
 
 ## Technology Stack
 
--   **HTML5**: Semantic structure.
--   **CSS3**: Custom styling with CSS variables, Flexbox, and Grid. No external frameworks.
--   **JavaScript**: Vanilla JS for lightweight intersection observer animations.
+- **HTML5**: Semantic markup
+- **CSS3**: Custom styling with CSS variables for theming
+- **Vanilla JavaScript**: Theme and language toggle functionality
+- **Hosting**: Static website hosting with CDN
+- **SSL**: HTTPS enabled for security
 
 ## Local Development
 
-To view the website locally:
+To run the website locally:
 
-1.  Clone the repository:
-    ```bash
-    git clone <repository-url>
-    ```
-2.  Navigate to the project directory:
-    ```bash
-    cd dedeshkurti.com
-    ```
-3.  Open `index.html` in your preferred web browser.
-    -   On macOS, you can run: `open index.html`
+```bash
+# Using Python 3
+python3 -m http.server 8000
 
-## Deployment
+# Then visit http://localhost:8000
+```
 
-This website is designed to be hosted as a static site on **AWS Amplify**, which offers a streamlined workflow for static site hosting.
+## Project Structure
 
-1.  **Push to GitHub**: Ensure your code is pushed to a GitHub repository.
-2.  **Connect to Amplify**:
-    -   Go to the AWS Console > AWS Amplify.
-    -   Click "Create new app" > "Host web app".
-    -   Select "GitHub" as your source code provider.
-3.  **Configure Build Settings**:
-    -   Amplify will automatically detect the settings.
-    -   Since this is a static site with no build step, ensure the "Build command" is empty or just `echo "no build"`.
-    -   Set the "Base directory" to `/` (root).
-4.  **Deploy**: Click "Save and deploy". Amplify will build and deploy your site globally.
+```
+├── assets/          # Images and media files
+├── index.html       # Main HTML file
+├── styles.css       # Stylesheet
+├── script.js        # JavaScript functionality
+├── favicon.ico      # Website favicon
+└── README.md        # This file
+```
+
+## Design Philosophy
+
+This website follows a minimal, elegant design approach appropriate for a tribute site:
+
+- Clean, uncluttered layout
+- Respectful color palette (dark mode default)
+- Serif typography for timeless elegance
+- Smooth transitions and subtle animations
+- Focus on content and readability
+
+## Browser Support
+
+- Chrome/Edge (latest)
+- Firefox (latest)
+- Safari (latest)
+- Mobile browsers (iOS Safari, Chrome Mobile)
 
 ## License
 
-The source code of this project is available under the [MIT License](LICENSE).
+This is a personal tribute website. All content and images are used with permission.
 
-**Content Copyright**: All photos, images, and personal text content on this website are **Copyright © 2025 Dede Shkurti Family. All Rights Reserved.** They may not be used, reproduced, or distributed without express written permission.
+**Content Copyright**: All photos, images, and personal text content on this website are **Copyright © 2025 Dedë Shkurti Family. All Rights Reserved.** They may not be used, reproduced, or distributed without express written permission.
+
+---
+
+**In Loving Memory**  
+Dedë Shkurti (1953 - 2018)  
+*Forever in our hearts*
