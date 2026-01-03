@@ -27,6 +27,21 @@ A minimal, elegant tribute website honoring the life and work of Dedë Shkurti (
 - **Hosting**: Static website hosting with CDN
 - **SSL**: HTTPS enabled for security
 
+## Deployment
+
+This website is hosted as a static site on **AWS S3** with **CloudFront CDN** for global distribution and HTTPS support.
+
+**Hosting Stack:**
+- **S3**: Static file storage
+- **CloudFront**: Content delivery network (CDN) with SSL/TLS
+- **Route 53**: DNS management
+- **Certificate Manager**: Free SSL certificates
+
+**To deploy updates:**
+1. Upload changed files to S3 bucket via AWS Console
+2. Create CloudFront invalidation to clear cache
+3. Changes will be live within 2-5 minutes
+
 ## Local Development
 
 To run the website locally:
