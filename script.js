@@ -39,16 +39,17 @@ document.addEventListener('DOMContentLoaded', () => {
         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
     `;
 
-    // Check for saved preference (Default is now Dark, so we check for 'light')
+    // Check for saved preference (Default is now Light, so we check for 'dark')
     const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'light') {
-        body.classList.add('light-mode');
-        iconContainer.innerHTML = moonIcon; // Show moon to switch back to dark
-        themeToggle.setAttribute('aria-label', 'Toggle Dark Mode');
-    } else {
-        // Default is dark
+    if (savedTheme === 'dark') {
+        // Dark mode
         iconContainer.innerHTML = sunIcon; // Show sun to switch to light
         themeToggle.setAttribute('aria-label', 'Toggle Light Mode');
+    } else {
+        // Default is light
+        body.classList.add('light-mode');
+        iconContainer.innerHTML = moonIcon; // Show moon to switch to dark
+        themeToggle.setAttribute('aria-label', 'Toggle Dark Mode');
     }
 
     themeToggle.addEventListener('click', () => {
