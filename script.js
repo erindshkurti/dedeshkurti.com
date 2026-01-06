@@ -1,4 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Set dynamic copyright year
+    const copyrightYearElements = document.querySelectorAll('#copyright-year');
+    const currentYear = new Date().getFullYear();
+    copyrightYearElements.forEach(el => el.textContent = currentYear);
+
     const observerOptions = {
         root: null,
         rootMargin: '0px',
